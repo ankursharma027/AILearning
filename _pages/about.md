@@ -3,7 +3,7 @@ title: "About"
 permalink: /about/
 ---
 
-Hi, I'm **Ankur Sharma** — a software engineer documenting my journey through AI, machine learning, and modern software development.
+Hi, I'm **Ankur Sharma** — a Sr software engineer documenting my journey through AI, machine learning, and modern software development.
 
 This portal is my personal knowledge base: notes from experiments, summaries of concepts I've learned, and practical guides I wish existed when I was starting out.
 

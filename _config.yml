@@ -1,0 +1,91 @@
+remote_theme: "mmistakes/minimal-mistakes@4.26.2"
+
+title: "AI Learning"
+subtitle: "Notes, experiments & insights on AI"
+name: "Ankur Sharma"
+description: "A personal knowledge portal documenting my journey through AI, ML, and modern software engineering."
+url: "https://ankursharma027.github.io"
+baseurl: "/AILearning"
+repository: "ankursharma027/AILearning"
+
+# Theme skin: "default", "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin: "dark"
+
+# Author
+author:
+  name: "Ankur Sharma"
+  avatar: "/assets/images/avatar.jpg"
+  bio: "Learning AI one model at a time."
+  location: "India"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/ankursharma027"
+
+# Site Footer
+footer:
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/ankursharma027"
+
+# Reading files
+include:
+  - _pages
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-include-cache
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Pagination
+paginate: 10
+paginate_path: /page:num/
+
+# Markdown processing
+markdown: kramdown
+highlighter: rouge
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+# Defaults
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: false
+      share: true
+      related: true
+      toc: true
+      toc_sticky: true
+  # _pages
+  - scope:
+      path: "_pages"
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+
+# Navigation
+navigation:
+  main:
+    - title: "Home"
+      url: /
+    - title: "Posts"
+      url: /posts/
+    - title: "Categories"
+      url: /categories/
+    - title: "Tags"
+      url: /tags/
+    - title: "About"
+      url: /about/

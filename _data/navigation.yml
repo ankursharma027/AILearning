@@ -1,0 +1,11 @@
+main:
+  - title: "Home"
+    url: /AILearning/
+  - title: "Posts"
+    url: /AILearning/posts/
+  - title: "Categories"
+    url: /AILearning/categories/
+  - title: "Tags"
+    url: /AILearning/tags/
+  - title: "About"
+    url: /AILearning/about/

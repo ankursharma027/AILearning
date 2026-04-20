@@ -36,6 +36,7 @@ nav:
   - LangGraph:
       - Introduction: langgraph/intro.md
       - Handling Memory: langgraph/memory.md
+      - Structure Output: langgraph/structure_output.md
       # Add new LangGraph pages here
   - About: about.md
 

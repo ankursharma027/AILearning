@@ -1,0 +1,65 @@
+site_name: AI Learning
+site_url: https://ankursharma027.github.io/AILearning/
+site_description: "A personal knowledge portal documenting my journey through AI, ML, and modern software engineering."
+site_author: Ankur Sharma
+
+repo_url: https://github.com/ankursharma027/AILearning
+repo_name: ankursharma027/AILearning
+
+theme:
+  name: material
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.highlight
+    - search.suggest
+    - content.code.copy
+    - content.code.annotate
+
+nav:
+  - Home: index.md
+  - LangGraph:
+      - Introduction: langgraph/intro.md
+      - Handling Memory: langgraph/memory.md
+      # Add new LangGraph pages here
+  - About: about.md
+
+plugins:
+  - search
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.inlinehilite
+  - admonition
+  - pymdownx.details
+  - tables
+  - toc:
+      permalink: true
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/ankursharma027

@@ -1,15 +1,4 @@
----
-title: "LangGraph: Building Stateful AI Agents"
-date: 2026-04-19
-categories:
-  - AI
-tags:
-  - langgraph
-  - langchain
-  - agents
-  - llm
-excerpt: "An introduction to LangGraph for building stateful, multi-step AI agent workflows."
----
+# Introduction to LangGraph
 
 ## What is LangGraph?
 
@@ -59,7 +48,8 @@ Define transitions between nodes:
 
 ```python
 graph.add_edge("node_a", "node_b")          # unconditional
-graph.add_conditional_edges(               # conditional routing
+
+graph.add_conditional_edges(                # conditional routing
     "router",
     lambda state: state["next"],
     {"agent": "agent_node", "end": END}

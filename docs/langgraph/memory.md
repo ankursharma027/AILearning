@@ -1,18 +1,6 @@
----
-title: "LangGraph: Handling Memory in AI Agents"
-date: 2026-04-19
-categories:
-  - AI
-tags:
-  - langgraph
-  - langchain
-  - agents
-  - memory
-  - llm
-excerpt: "A deep dive into short-term and long-term memory patterns in LangGraph — from in-memory state to persistent checkpointers."
----
+# Handling Memory in LangGraph
 
-## Types of Memory in LangGraph
+## Types of Memory
 
 LangGraph distinguishes between two kinds of memory:
 
@@ -148,8 +136,6 @@ builder.add_edge("summarize", END)
 
 ## Accessing & Inspecting State
 
-Read the saved state for a thread at any point:
-
 ```python
 # Get current state
 state = graph.get_state(config)
@@ -164,17 +150,14 @@ for snapshot in graph.get_state_history(config):
 Rewind to a past checkpoint:
 
 ```python
-# Grab a past snapshot
 history = list(graph.get_state_history(config))
 past_config = history[2].config   # 3rd checkpoint back
-
-# Resume from that point
 graph.invoke(None, config=past_config)
 ```
 
 ---
 
-## External / Semantic Memory (Long-Term Knowledge)
+## External / Semantic Memory
 
 For facts that should persist beyond a single conversation, store them in a vector database and retrieve them as context.
 

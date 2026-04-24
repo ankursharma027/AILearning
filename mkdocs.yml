@@ -41,6 +41,8 @@ nav:
       - Agentic LangGraph: langgraph/agentic_langgraph.md
   - RAG:
       - Introduction: RAG/rag_introduction.md
+  - Spring Boot:
+      - Interview Questions: SpringBoot/Interview_questions.md
   - About: about.md
 
 plugins:

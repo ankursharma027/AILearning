@@ -37,6 +37,8 @@ nav:
       - Introduction: langgraph/intro.md
       - Handling Memory: langgraph/memory.md
       - Structure Output: langgraph/structure_output.md
+      - Vector Database: langgraph/vector_database.md
+      - Agentic LangGraph: langgraph/agentic_langgraph.md
   - RAG:
       - Introduction: RAG/rag_introduction.md
   - About: about.md

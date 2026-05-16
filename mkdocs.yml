@@ -43,6 +43,8 @@ nav:
       - Introduction: RAG/rag_introduction.md
   - Spring Boot:
       - Interview Questions: SpringBoot/Interview_questions.md
+  - datastructure:
+      -  Arrays: datastructure/arrays.md
   - About: about.md
 
 plugins:

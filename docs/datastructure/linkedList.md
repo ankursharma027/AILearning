@@ -13,9 +13,69 @@
 ### Type of linked List
 
 1. **Singly Linked List:** The simplest form where each node contains data and a pointer to the next node. The last node points to null, indicating the end of the list.
+![alt text](image-1.png)
+
+```
+[data|next] --> [data|next] --> [data|next] --> NULL
+   Node 1           Node 2           Node 3
+```
+
+```mermaid
+graph LR
+    A["[1 | next]"] --> B["[2 | next]"]
+    B --> C["[3 | next]"]
+    C --> N["NULL"]
+```
 
 2. **Doubly Linked List:** Each node contains data and two pointers: one pointing to the next node and another pointing to the previous node, allowing for bidirectional traversal.
 
+```
+NULL <-- [prev|data|next] <--> [prev|data|next] <--> [prev|data|next] --> NULL
+              Node 1                 Node 2                 Node 3
+```
+
+```mermaid
+graph LR
+    NULL1["NULL"] --> A
+    A["[prev | 1 | next]"] --> B["[prev | 2 | next]"]
+    B --> A
+    B --> C["[prev | 3 | next]"]
+    C --> B
+    C --> NULL2["NULL"]
+```
+
 3. **Circular Linked List:** A variation of the singly linked list where the last node does not point to null, but instead points back to the first node, forming a circle.
 
+```
+ ┌─────────────────────────────────────┐
+ ↓                                     │
+[data|next] --> [data|next] --> [data|next]
+   Node 1           Node 2         Node 3
+```
+
+```mermaid
+graph LR
+    A["[1 | next]"] --> B["[2 | next]"]
+    B --> C["[3 | next]"]
+    C --> A
+```
+
 4. **Doubly Circular Linked List:** Combines features of both doubly and circular linked lists. The last node points to the first node, and the first node points back to the last node, allowing complete circular navigation in both directions.
+
+```
+ ┌──────────────────────────────────────────────┐
+ │  ┌───────────────────────────────────────┐   │
+ ↓  ↑                                       ↓   ↑
+[prev|1|next] <--> [prev|2|next] <--> [prev|3|next]
+     Node 1              Node 2             Node 3
+```
+
+```mermaid
+graph LR
+    A["[prev | 1 | next]"] --> B["[prev | 2 | next]"]
+    B --> A
+    B --> C["[prev | 3 | next]"]
+    C --> B
+    C --> A
+    A --> C
+```

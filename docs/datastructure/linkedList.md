@@ -29,6 +29,8 @@ graph LR
 
 2. **Doubly Linked List:** Each node contains data and two pointers: one pointing to the next node and another pointing to the previous node, allowing for bidirectional traversal.
 
+![alt text](image-2.png)
+
 ```
 NULL <-- [prev|data|next] <--> [prev|data|next] <--> [prev|data|next] --> NULL
               Node 1                 Node 2                 Node 3
@@ -46,6 +48,8 @@ graph LR
 
 3. **Circular Linked List:** A variation of the singly linked list where the last node does not point to null, but instead points back to the first node, forming a circle.
 
+![alt text](image-3.png)
+
 ```
  ┌─────────────────────────────────────┐
  ↓                                     │
@@ -61,6 +65,8 @@ graph LR
 ```
 
 4. **Doubly Circular Linked List:** Combines features of both doubly and circular linked lists. The last node points to the first node, and the first node points back to the last node, allowing complete circular navigation in both directions.
+
+![alt text](image-4.png)
 
 ```
  ┌──────────────────────────────────────────────┐

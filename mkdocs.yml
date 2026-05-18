@@ -45,7 +45,7 @@ nav:
       - Interview Questions: SpringBoot/Interview_questions.md
   - Datastructure:
       -  Arrays: datastructure/arrays.md
-      -  LinkList: datastructure/linkedList.md
+      -  LinkedList: datastructure/linkedList.md
   - About: about.md.
 
 plugins:

@@ -140,3 +140,12 @@ Pointer stores memory address of another variables
 For ex int a * p
 
 so p will store the memory address of int a.
+
+## Time Complexity
+
+| Operation | Complexity | Notes |
+|---|---|---|
+| Insert at Beginning | O(n) | Must shift all elements right |
+| Insert at ith Index | O(n) | Must shift elements after i |
+| Insert at Last Index | O(1) | Assumes array has space; no shifting needed |
+| Fetch (read) by Index | O(1) | Random access via index |

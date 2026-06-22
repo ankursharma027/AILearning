@@ -85,3 +85,14 @@ graph LR
     C --> A
     A --> C
 ```
+
+## Time Complexity
+
+| Operation | Complexity | Notes |
+|---|---|---|
+| Insert at Beginning | O(1) | Just update the head pointer |
+| Insert at ith Index | O(n) | Must traverse to reach position i |
+| Insert at Last Index | O(n) | Must traverse entire list to find the tail |
+| Fetch (read) by Index | O(n) | No random access; must traverse sequentially |
+
+In Case if linkedList the compiler has to store extra space for next node memory address.

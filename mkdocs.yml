@@ -44,8 +44,12 @@ nav:
   - Spring Boot:
       - Interview Questions: SpringBoot/Interview_questions.md
   - Datastructure:
-      -  Arrays: datastructure/arrays.md
-      -  LinkedList: datastructure/linkedList.md
+      - Arrays: datastructure/arrays.md
+      - LinkedList: datastructure/linkedList.md
+      - Stack: datastructure/stack.md
+      - Queue: datastructure/queue.md
+      - Bubble Sort: datastructure/BubbleSort.md
+      - Quick Sort: datastructure/QuickSort.md
   - About: about.md.
 
 plugins:

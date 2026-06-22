@@ -50,6 +50,7 @@ nav:
       - Queue: datastructure/queue.md
       - Bubble Sort: datastructure/BubbleSort.md
       - Quick Sort: datastructure/QuickSort.md
+      - Binary Search: datastructure/BinarySearch.md
   - About: about.md.
 
 plugins:

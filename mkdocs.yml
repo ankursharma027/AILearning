@@ -51,6 +51,7 @@ nav:
       - Bubble Sort: datastructure/BubbleSort.md
       - Quick Sort: datastructure/QuickSort.md
       - Binary Search: datastructure/BinarySearch.md
+      - Linear Search: datastructure/LinearSearch.md
   - About: about.md.
 
 plugins:
